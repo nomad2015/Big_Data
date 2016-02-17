@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#PBS -N mpihello17
+#PBS -l select=3:ncpus=1,walltime=0:02:00
+#PBS -l place=free
+#PBS -V
+#PBS -q development
+
+cd $PBS_O_WORKDIR
+
+echo -n ">>>> PBS Master compute node is: "
+hostname
+echo ""
+
+
+mpirun -np 3  hellos 2>&1
+
+

@@ -1,0 +1,9 @@
+>>>> PBS Master compute node is: compute-0-70.local
+
+This will only be printed by process 0.
+The number of processes involved is: 4
+
+Hello from process 0. 
+Hello from process 1. 
+Hello from process 2. 
+Hello from process 3. 
